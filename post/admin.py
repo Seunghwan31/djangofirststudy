@@ -22,6 +22,4 @@ class CommentAdmin(admin.ModelAdmin):
 
 admin.site.register(Post, PostAdmin)
 admin.site.register(Comment, CommentAdmin)
-"""Post 모델은 포스트를 나타내고, Comment 모델은 각 포스트에 대한 댓글을 나타냈습니다.
-Comment 모델의 post 필드는 외래 키로, 댓글이 특정 포스트에 연결되도록 했습니다. related_name='comments'는 역참조를 위한 설정입니다.
-"""
+
