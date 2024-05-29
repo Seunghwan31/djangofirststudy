@@ -40,3 +40,6 @@ class Comment(models.Model):
     comment = models.TextField(max_length=500, default="", blank=True, null=True)
     createAt = models.DateTimeField(auto_now_add=True)
     updateAt = models.DateTimeField(auto_now=True)
+    """Post 모델은 포스트를 나타내고, Comment 모델은 각 포스트에 대한 댓글을 나타냈습니다.
+Comment 모델의 post 필드는 외래 키로, 댓글이 특정 포스트에 연결되도록 했습니다. related_name='comments'는 역참조를 위한 설정입니다.
+"""
