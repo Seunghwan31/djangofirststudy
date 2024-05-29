@@ -41,5 +41,6 @@ class PostSerializer(serializers.ModelSerializer):
         model = Post
         fields = ['id', 'title', 'content', 'like', 'date', 'comments']
 
-
+"""CommentSerializer는 댓글 데이터를 직렬화합니다.
+PostSerializer는 포스트 데이터를 직렬화하며, comments 필드를 통해 관련 댓글들을 포함했습니다."""
 
